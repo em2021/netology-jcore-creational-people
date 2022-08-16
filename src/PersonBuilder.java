@@ -29,8 +29,12 @@ public class PersonBuilder {
     }
 
     public Person build() throws IllegalStateException {
-        if (name.isEmpty()) throw new IllegalStateException("У человека должно быть имя");
-        if (lastname.isEmpty()) throw new IllegalStateException("У человека должна быть фамилия");
+        if (name.isEmpty()) {
+            throw new IllegalStateException("У человека должно быть имя");
+        }
+        if (lastname.isEmpty()) {
+            throw new IllegalStateException("У человека должна быть фамилия");
+        }
         return new Person(name, lastname, age, address);
     }
 }

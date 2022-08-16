@@ -34,8 +34,9 @@ class Person {
     }
 
     public boolean hasAge() {
-        if (age < 0)
+        if (age < 0) {
             return false;
+        }
         return true;
     }
 
@@ -52,8 +53,9 @@ class Person {
     }
 
     public OptionalInt getAge() {
-        if (!hasAge())
+        if (!hasAge()) {
             return OptionalInt.empty();
+        }
         return OptionalInt.of(age);
     }
 
