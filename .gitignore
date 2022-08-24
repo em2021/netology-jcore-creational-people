@@ -21,6 +21,7 @@
 
 # Idea Project Files
 .idea/
+out/
 
 # Eclipse m2e generated files
 # Eclipse Core
